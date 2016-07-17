@@ -12,7 +12,7 @@ RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true 
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/oracle-jdk8-installer \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/apt/archives/*
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/apt/archives/*.deb /var/cache/apt/archives/partials/*
 
 # Define working directory.
 WORKDIR /data
