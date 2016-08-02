@@ -1,4 +1,4 @@
-FROM bigboards/base-__arch__
+FROM bigboards/base-__arch__:14.04
 
 MAINTAINER bigboards (hello@bigboards.io)
 
